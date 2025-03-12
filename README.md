@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 # Uma API REST simples para consumo de dados
 
-Para subir o projeto no ar com SQLite, copie o arquivo `.env_example` para `.env`.  
-
-Você também precisará adicionar uma secret key no arquivo `.env`:
+Você  precisará adicionar uma secret key no  `.env`,assim como as informações necessárias para o banco :
 
 ```
 TOKEN_SECRET='sua_secret_key_aqui'
@@ -18,27 +15,12 @@ npx sequelize db:seed:all
 npm run dev 
 ```
 
-Neste ponto sua API deverá está rodando no endereço http://127.0.0.1:3001/.
+Neste ponto sua API deverá está rodando no endereço http://127.0.0.1:3002/.
 
 Caso queira migrar para MySQL/MariaDB, edite as configurações de base de dados no arquivo `.env`, configure também o `src/config/database.js`.
 
 Para SQLite as configurações são:
 
-```javascript
-require('dotenv').config();
-
-module.exports = {
-  dialect: 'sqlite',
-  storage: './db.sqlite',
-  define: {
-    timestamps: true,
-    underscored: true,
-    underscoredAll: true,
-    createdAt: 'created_at',
-    updatedAt: 'updated_at',
-  },
-};
-```
 
 Para MySQL/MariaDB as configurações são:
 
@@ -66,7 +48,6 @@ module.exports = {
 };
 ```
 
-Perceba que as configurações começando com `process.env.` vem do arquivo `.env`.
 
 Os dados de usuário e senha dos arquivos de seed são:
 
@@ -87,7 +68,3 @@ Headers:
 ```
 Content-Type	application/json; charset=utf-8
 ```
-=======
-# school_api
-At the beginning of my development journey
->>>>>>> dddc8fb (Initial commit)
