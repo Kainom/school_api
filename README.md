@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Uma API REST simples para consumo de dados
 
 Para subir o projeto no ar com SQLite, copie o arquivo `.env_example` para `.env`.  
@@ -86,3 +87,7 @@ Headers:
 ```
 Content-Type	application/json; charset=utf-8
 ```
+=======
+# school_api
+At the beginning of my development journey
+>>>>>>> dddc8fb (Initial commit)
